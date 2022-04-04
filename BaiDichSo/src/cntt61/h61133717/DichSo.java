@@ -29,12 +29,55 @@ public class DichSo extends Thread{
 			InputStreamReader inReader = new InputStreamReader(in);
 			BufferedReader buffR = new BufferedReader(inReader);
 			
-			String chuoiNhan=buffR.readLine();
-			System.out.print(chuoiNhan);
-			
-			String chuoiGui=chuoiNhan;
-			buffW.write(chuoiGui+"\n");
-			buffW.flush();
+			while(true){
+				String chuoiNhan=buffR.readLine();
+				System.out.print(chuoiNhan);
+				
+				if(chuoiNhan.equals("0\n")) {
+					String chuoiGui= "zero";
+					buffW.write(chuoiGui+"\n");
+					buffW.flush();
+				}else if(chuoiNhan.equals("1\n")) {
+					String chuoiGui= "one";
+					buffW.write(chuoiGui+"\n");
+					buffW.flush();
+				}else if(chuoiNhan.equals("2\n")) {
+					String chuoiGui= "two";
+					buffW.write(chuoiGui+"\n");
+					buffW.flush();
+				}else if(chuoiNhan.equals("3\n")) {
+					String chuoiGui= "three";
+					buffW.write(chuoiGui+"\n");
+					buffW.flush();
+				}else if(chuoiNhan.equals("4\n")) {
+					String chuoiGui= "four";
+					buffW.write(chuoiGui+"\n");
+					buffW.flush();
+				}else if(chuoiNhan.equals("5\n")) {
+					String chuoiGui= "five";
+					buffW.write(chuoiGui+"\n");
+					buffW.flush();
+				}else if(chuoiNhan.equals("6\n")) {
+					String chuoiGui= "six";
+					buffW.write(chuoiGui+"\n");
+					buffW.flush();
+				}else if(chuoiNhan.equals("7\n")) {
+					String chuoiGui= "seven";
+					buffW.write(chuoiGui+"\n");
+					buffW.flush();
+				}else if(chuoiNhan.equals("8\n")) {
+					String chuoiGui= "eight";
+					buffW.write(chuoiGui+"\n");
+					buffW.flush();
+				}else if(chuoiNhan.equals("9\n")) {
+					String chuoiGui= "night";
+					buffW.write(chuoiGui+"\n");
+					buffW.flush();
+				}else if(chuoiNhan.equals("10\n")) {
+					break;
+				}
+				
+			}
 			socketClient.close();
 			
 		}catch(Exception e) {
