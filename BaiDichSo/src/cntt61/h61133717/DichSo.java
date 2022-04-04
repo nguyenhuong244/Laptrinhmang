@@ -33,47 +33,47 @@ public class DichSo extends Thread{
 				String chuoiNhan=buffR.readLine();
 				System.out.print(chuoiNhan);
 				
-				if(chuoiNhan.equals("0\n")) {
+				if(chuoiNhan.equals("0")) {
 					String chuoiGui= "zero";
 					buffW.write(chuoiGui+"\n");
 					buffW.flush();
-				}else if(chuoiNhan.equals("1\n")) {
+				}else if(chuoiNhan.equals("1")) {
 					String chuoiGui= "one";
 					buffW.write(chuoiGui+"\n");
 					buffW.flush();
-				}else if(chuoiNhan.equals("2\n")) {
+				}else if(chuoiNhan.equals("2")) {
 					String chuoiGui= "two";
 					buffW.write(chuoiGui+"\n");
 					buffW.flush();
-				}else if(chuoiNhan.equals("3\n")) {
+				}else if(chuoiNhan.equals("3")) {
 					String chuoiGui= "three";
 					buffW.write(chuoiGui+"\n");
 					buffW.flush();
-				}else if(chuoiNhan.equals("4\n")) {
+				}else if(chuoiNhan.equals("4")) {
 					String chuoiGui= "four";
 					buffW.write(chuoiGui+"\n");
 					buffW.flush();
-				}else if(chuoiNhan.equals("5\n")) {
+				}else if(chuoiNhan.equals("5")) {
 					String chuoiGui= "five";
 					buffW.write(chuoiGui+"\n");
 					buffW.flush();
-				}else if(chuoiNhan.equals("6\n")) {
+				}else if(chuoiNhan.equals("6")) {
 					String chuoiGui= "six";
 					buffW.write(chuoiGui+"\n");
 					buffW.flush();
-				}else if(chuoiNhan.equals("7\n")) {
+				}else if(chuoiNhan.equals("7")) {
 					String chuoiGui= "seven";
 					buffW.write(chuoiGui+"\n");
 					buffW.flush();
-				}else if(chuoiNhan.equals("8\n")) {
+				}else if(chuoiNhan.equals("8")) {
 					String chuoiGui= "eight";
 					buffW.write(chuoiGui+"\n");
 					buffW.flush();
-				}else if(chuoiNhan.equals("9\n")) {
+				}else if(chuoiNhan.equals("9")) {
 					String chuoiGui= "night";
 					buffW.write(chuoiGui+"\n");
 					buffW.flush();
-				}else if(chuoiNhan.equals("10\n")) {
+				}else if(chuoiNhan.equals("10")) {
 					break;
 				}
 				
