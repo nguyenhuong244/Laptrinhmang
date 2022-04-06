@@ -31,7 +31,7 @@ public class DichSo extends Thread{
 			
 			while(true){
 				String chuoiNhan=buffR.readLine();
-				System.out.print(chuoiNhan);
+				System.out.print("\n"+chuoiNhan);
 				
 				if(chuoiNhan.equals("0")) {
 					String chuoiGui= "zero";
@@ -74,6 +74,9 @@ public class DichSo extends Thread{
 					buffW.write(chuoiGui+"\n");
 					buffW.flush();
 				}else if(chuoiNhan.equals("10")) {
+					String chuoiGui= "ten";
+					buffW.write(chuoiGui+"\n");
+					buffW.flush();
 					break;
 				}
 				
