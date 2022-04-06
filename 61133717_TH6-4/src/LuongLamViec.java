@@ -49,6 +49,38 @@ public class LuongLamViec extends Thread{
 				
 				if(chuoiNhan.equals("1")) {
 					guifile("D:\\1.txt");
+					buffW.flush();
+				}else if(chuoiNhan.equals("2")) {
+					guifile("D:\\2.txt");
+					buffW.flush();
+				}else if(chuoiNhan.equals("3")) {
+					guifile("D:\\3.txt");
+					buffW.flush();
+				}else if(chuoiNhan.equals("4")) {
+					guifile("D:\\4.txt");
+					buffW.flush();
+				}else if(chuoiNhan.equals("5")) {
+					guifile("D:\\5.txt");
+					buffW.flush();
+				}else if(chuoiNhan.equals("6")) {
+					guifile("D:\\6.txt");
+					buffW.flush();
+				}else if(chuoiNhan.equals("7")) {
+					guifile("D:\\7.txt");
+					buffW.flush();
+				}else if(chuoiNhan.equals("8")) {
+					guifile("D:\\8.txt");
+					buffW.flush();
+				}else if(chuoiNhan.equals("9")) {
+					guifile("D:\\9.txt");
+					buffW.flush();
+				}else if(chuoiNhan.equals("10")) {
+					guifile("D:\\10.txt");
+					buffW.flush();
+				}else if(chuoiNhan.equals("0")) {
+					buffW.write("Kết thúc"+"\n");
+					buffW.flush();
+					break;
 				}
 			}
 			

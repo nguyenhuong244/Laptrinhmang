@@ -12,7 +12,7 @@ public class Client {
 	public static void main(String[] args) {
 		try {
 			
-			Socket socket = new Socket("localhost",5555);
+			Socket socket = new Socket("localhost",5024);
 			System.out.print("Conected!");
 			InputStream in = socket.getInputStream();
 			InputStreamReader inReader = new InputStreamReader(in);
@@ -30,7 +30,7 @@ public class Client {
 				buffW.flush();
 				String chuoiNhan = buffR.readLine();
 				System.out.print("Server: "+ chuoiNhan);
-				if(chuoiGui.equals("10")) break;
+				if(chuoiGui.equals("0")) break;
 			}
 			socket.close();
 			
