@@ -48,8 +48,8 @@ public class LuongLamViec extends Thread{
 				System.out.print("\n"+chuoiNhan);
 				
 				if(chuoiNhan.equals("1")) {
-					guifile("D:\\1.txt");
-					buffW.flush();
+					guifile("D:\\eclipse\\LapTrinhMang\\Laptrinhmang\\61133717_TH6-4\\file.txt\\1.txt");
+//					buffW.flush();
 				}else if(chuoiNhan.equals("2")) {
 					guifile("D:\\2.txt");
 					buffW.flush();

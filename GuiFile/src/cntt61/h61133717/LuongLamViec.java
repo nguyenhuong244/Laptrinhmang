@@ -18,7 +18,7 @@ public class LuongLamViec extends Thread{
 		this.socketClient = socketClient;
 		this.id = id;
 	}
-	void guifile(String tenFile)throws IOException{
+	public void guifile(String tenFile)throws IOException{
 		//lấy về luồng nhập từ file
 		FileReader fr = new FileReader(tenFile);
 		BufferedReader buffR = new BufferedReader(fr);
