@@ -20,7 +20,7 @@ public class LuongLamViec extends Thread{
 		this.socketClient = socketClient;
 		this.id = id;
 	}
-	public boolean guifile(File tenFile)throws IOException{
+	String guifile(File tenFile)throws IOException{
 		FileReader fr = new FileReader(tenFile);
 		BufferedReader buffR = new BufferedReader(fr);
 
@@ -34,7 +34,7 @@ public class LuongLamViec extends Thread{
 			buffW.flush();
 		}
 		fr.close();
-		return true ;
+		return "";
 	}
 	
 	public void run() {
@@ -94,19 +94,10 @@ public class LuongLamViec extends Thread{
 						name = item;
 					}
 					File file = new File("D://"+ name); 
-					boolean chuoigui = guifile(file);
+					String chuoigui=guifile(file);
 					buffW.write(chuoigui+"\n");
 					buffW.flush();
 					
-//					if(guifile(file)) {
-//						System.out.print("\nDa tai file thanh cong!");
-//					}
-//					else {
-//						System.out.print("\nTai file that bai");
-//						String chuoigui = "Tai file that bai";
-//						buffW.write(chuoigui+"\n");
-//						buffW.flush();
-//					}
 				}
 				if(chuoinhan.contains("end")) {
 					String chuoigui="Kết thúc";
